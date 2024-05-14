@@ -20,9 +20,9 @@ const showData = () => {
             <td style="width: 118px">${res.id}</td>
             <td style="width: 393px">${res.temperature}</td>
             <td style="width: 316px">${res.humidity}</td>
-            <td style="display: flex; justify-content: center; align-items:center; gap: 5px;">${
-              res.boolean.data[0]
-            }<p class="${
+            <td style="display: flex; justify-content: center; align-items:center; gap: 5px; ${
+              window.innerWidth < 1200 ? 'width: 150px;' : null
+            }">${res.boolean.data[0]}<p class="${
             res.boolean.data[0] === 1 ? 'text-warning' : 'text-secondary'
           }" style="margin: 0;">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
