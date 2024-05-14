@@ -1,0 +1,35 @@
+html,
+body {
+  background: #a8d0ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    90deg,
+    #ffecfc,
+    #a8d0ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    90deg,
+    #ffecfc,
+    #a8d0ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  margin: 50px auto;
+  border: 5px solid red;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
