@@ -38,7 +38,7 @@ const showData = () => {
         }
       })
       .catch((error) => console.log(`Error al cargar los datos: ${error}`));
-  }, 10000);
+  }, 5000);
 };
 
 const cleanHTML = () => {
