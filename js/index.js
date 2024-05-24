@@ -19,8 +19,8 @@ const showData = () => {
             const row = document.createElement('tr');
             row.innerHTML = `
               <td style="width: 118px">${res.id}</td>
-              <td style="width: 393px">${res.temperature}</td>
-              <td style="width: 316px">${res.humidity}</td>
+              <td style="width: 393px">${res.temperature}<span>°C</span></td>
+              <td style="width: 316px">${res.humidity}<span>%</span></td>
               <td style="display: flex; justify-content: center; align-items:center; gap: 5px; ${
                 window.innerWidth < 1200 ? 'width: 150px;' : null
               }">${res.istrue}<p class="${
